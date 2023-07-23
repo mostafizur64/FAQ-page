@@ -1,0 +1,160 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    background-size: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+body::after {
+    content: '';
+    background: conic-gradient(from 180deg at 50.00% 50.00%, rgba(3, 8, 27, 0.30) 0deg, rgba(3, 8, 27, 0.50) 180deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* z-index: 9999; */
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.login-box {
+    width: 758px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    /* top: 50%;
+    left: 50%; */
+    /* position: absolute; */
+    /* transform: translate(-50%, -50%); */
+    box-sizing: border-box;
+    /* padding: 0px 80px 80px 80px; */
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.06);
+    background: rgba(81, 241, 184, 0.10);
+    backdrop-filter: blur(20px);
+    z-index: 999;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+    background-image: url('/login/image/Ellipse\ 29.png');
+    fill: rgba(81, 241, 184, 0.10);
+    stroke-width: 2px;
+    stroke: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(20px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: lightgray 50%;
+    padding: 5px;
+
+}
+
+/* login-heading */
+.login-heading {
+    margin-top: 59px;
+}
+
+.login-heading h1 {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.login-heading p {
+    font-size: 18px;
+    width: 333px;
+    color: #DADADA;
+    margin: 0 auto;
+
+
+}
+/* 
+/* login-with */
+.login-with {
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.login-with img {
+    width: 221px;
+    height: 10px;
+    stroke-width: 1px;
+    stroke: #28DFD9;
+}
+
+
+.login-box input {
+    width: 100%;
+    height: 78px;
+    margin-bottom: 20px;
+   position: relative;
+}
+
+ input[type="text"],
+input[type="password"] {
+    border-radius: 8px;
+    border: 1px solid #3F2982;
+    background: #1B1E43;
+    backdrop-filter: blur(45px);
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+
+
+}
+/* .field-group{
+    position: relative;
+} */
+.icon1 {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    font-size: 25px;
+    color: #4b00ff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #39dc79;
+}
+
+.login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+} 
+
+
+.login-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+.login-box a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+
+.login-box a:hover {
+    color: #39dc79;
+} 
+ 
+
+
+

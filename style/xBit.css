@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: '';
+}
+
+body {
+
+  background-color: #02050F;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: white
+}
+
+/* header  */
+header {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar {
+
+  width: 100%;
+  height: 60px;
+  max-width: 1520px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.navbar img {
+  width: 60px;
+  height: 60px;
+
+}
+
+.navbar h1 {
+  color: #FFF;
+  font-size: 26.37px;
+
+}
+
+.navbar .links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+}
+
+.nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border-bottom 0.3s ease;
+
+  gap: 16px;
+}
+
+.nav-items:hover {
+  scale: 1.06;
+  color: #fff;
+  border-bottom: 2px solid white;
+
+}
+
+.nav-logout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+  gap: 16px;
+}
+
+.navbar .toggle_btn {
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.action-button {
+  color: #fff;
+
+}
+
+.action-button:hover {
+  scale: 1.06;
+  color: #fff;
+
+}
+
+.action-button:active {
+  scale: 0.95;
+}
+
+/* DroupDown Menu  */
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background: #101525;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 999;
+  opacity: 0.91;
+  box-shadow: 10px 10px 10px black;
+  backdrop-filter: 100px;
+}
+
+.dropdown_menu.open {
+  height: 240px;
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown_menu .action-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*navbar responsive design */
+@media (max-width:992px) {
+
+  .navbar .links,
+  .navbar .action-button {
+    display: none;
+  }
+
+  .navbar .toggle_btn {
+    display: block;
+  }
+
+  .dropdown_menu {
+    display: block;
+  }
+}
+
+@media (max-width:576px) {
+
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
+}
+
+
+/* navbar css end  */
+
+/* FAQ css  */
+.faq-item h1 {
+  font-size: 60px;
+  width: 877px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.faq-item p {
+  top: 240px;
+  font-size: 20px;
+  width: 831px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.lineSVG {
+  width: 20px;
+  margin-top: 0;
+}
+
+/* Custom styles for the accordion header and button */
+.custom-header {
+  background-color: #02050F;
+}
+
+.custom-button {
+  background-color: #02050F;
+  color: white;
+}
+
+/* Set background color of accordion body when collapsed */
+.custom-accordion .accordion-button:not(.collapsed) {
+  background-color: #191438;
+  color: white;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+/* Set color of the plus and minus icons on the collapsed accordion button */
+.custom-accordion .accordion-button::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-plus-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z'/%3E%3C/svg%3E");
+  transition: .5s;
+
+}
+
+/* Set color of the minus icon on the expanded accordion button */
+.custom-accordion .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-dash-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z'/%3E%3C/svg%3E");
+  background-color: #191438;
+
+}
+
+
+
+.custom-container {
+  max-width: 1095px;
+  height: 1131px;
+  margin: 0 auto;
+  margin-top: 80px;
+
+}
+
+.accordion {
+  margin-top: 20px;
+}
+
+.accordion-item {
+  background-color: #191438;
+}
+
+.accordion-button {
+  background-color: #02050F;
+}
+
+.custom-header {
+  background-color: #02050F;
+}
+
+.custom-button {
+  background-color: #02050F;
+  color: white;
+}
+
+/* footer 
+
+/* blur color set css  */
+.first-blur {
+  position: absolute;
+  width: 459px;
+  height: 512px;
+  border-radius: 512px;
+  background: #5724C3;
+  filter: blur(450px);
+  z-index: -1;
+  top: 39px;
+  left: -51px;
+  opacity: .2;
+  margin-bottom: 1052px;
+}
+
+.blur {
+  position: absolute;
+  width: 459px;
+  height: 512px;
+  border-radius: 512px;
+  background: #A716AA;
+  z-index: -1;
+  top: 400px;
+  right: 10px;
+  filter: blur(450px);
+  opacity: .2;
+}
+
+/* svg style css */
+
+.svg-style {
+  max-width: 1520px;
+  margin: 0 auto;
+
+}
+
+.svg-style img {
+  width: 100%;
+  text-align: center;
+  height: 5px;
+  margin-top: -160px;
+}
+
+
+/* footer  css add  */
+.footer {
+  max-width: 1520px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  /* margin-top: -150px; */
+
+}
+
+/*resposive  navbar  */
+@media (max-width:992px) {
+
+  .faq-item h1 {
+    font-size: 30px;
+    width: 250px;
+    text-align: center;
+    
+  }
+
+  .faq-item p {
+    top: 240px;
+    font-size: 15px;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .accordion {
+   padding: 10px;
+  }
+
+  .svg-style {
+    max-width: 1520px;
+    text-align: center;
+
+  }
+
+  .svg-style img {
+    width: 100%;
+    height: 3px;
+  }
+}
+
+
+
+
+@media (max-width:576px) {
+  
+
+  .faq-item h1 {
+    font-size: 30px;
+    width: 250px;
+    text-align: center;
+    
+  }
+
+  .faq-item p {
+    top: 240px;
+    font-size: 15px;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .accordion {
+   padding: 10px;
+  }
+
+  .svg-style {
+    max-width: 1300px;
+    text-align: center;
+
+  }
+
+  .svg-style img {
+    width: 80%;
+    height: 3px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+}
